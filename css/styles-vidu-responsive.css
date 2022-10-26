@@ -1,0 +1,29 @@
+/* max-width : chiều rộng tối đa của thiết bị   */
+/* min-width : điểm bắt đầu của thiết bị ( max-width của thiết bị nhỏ hơn +1 ) */
+/* 
+PC: >= 1024 
+Table: >= 491 & < 740
+Mobile:  < 490
+*/
+
+/* Laptop  */
+@media (min-width: 641px) {
+  h1 {
+    color: red;
+  }
+}
+
+/* Thiết bị ipad  */
+@media (min-width: 491px) and (max-width: 640px) {
+  h1 {
+    color: blue;
+  }
+}
+
+/* Thiết bị điện thoại  */
+
+@media (max-width: 490px) {
+  h1 {
+    color: orange;
+  }
+}

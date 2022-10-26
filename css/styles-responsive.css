@@ -1,0 +1,36 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  gap: 10px;
+}
+.grid-container div {
+  background-color: blue;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+/* For tablet  */
+@media (min-width: 491px) and (max-width: 780px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+  }
+
+  .grid-container div {
+    background-color: violet;
+  }
+}
+
+/* For mobile  */
+@media (max-width: 491px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 300px;
+  }
+
+  .grid-container div {
+    background-color: aqua;
+  }
+}
